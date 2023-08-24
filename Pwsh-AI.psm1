@@ -15,5 +15,6 @@ foreach ($Folder in @('Private', 'Public', 'Classes')) {
 }
 
 Export-ModuleMember -Function (Get-ChildItem -Path "$PSScriptRoot\Public\*.ps1").BaseName
-
+Set-Alias -Name 'menu' -Value 'Show-Menu' -Scope Global -Option AllScope
+Set-Alias -Name 'psai' -Value 'Show-PSAI' -Scope Global -Option AllScope
 Set-Alias -Name 'pwshai' -Value 'Use-PwshAI' -Scope Global -Option AllScope

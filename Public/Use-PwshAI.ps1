@@ -1,44 +1,33 @@
 <#
-
 .SYNOPSIS
-
-Shows an interactive menu based on user input and execute the selected AI generated PowerShell command.
+    Shows an interactive menu of AI generated PowerShell commands based on user input.
 
 .DESCRIPTION
-
-Shows a list of AI generated PowerShell commands based on the user input. 
-User can select one of the commands to execute with up and down arrow keys. 
-The selected command will be executed in the Windows Terminal.
+    Shows a list of AI generated PowerShell commands based on the user input. 
+    User can select one of the commands to execute with Up and Down arrow keys. 
+    The selected command will be executed in the Windows Terminal upon pressing Enter eky.
+    Alternatively, user can press Esc key to exit the menu without executing any command.
 
 .PARAMETER  Intention
-
-This is the user input of which the AI will generate the PowerShell command.
+    This is the user input of which the AI will generate the PowerShell command.
 
 .PARAMETER  SuggestionCount
-
-This is the number of suggestions the AI will generate.
-
+    This is the number of suggestions the AI will generate. Default is 3.
 
 .INPUTS
-
-None. You cannot pipe objects to Use-PwshAI.
+    None. You cannot pipe objects to Use-PwshAI.
 
 .OUTPUTS
-
-None. The output is directly executed in the Windows Terminal.
+    None. The output is directly executed in the Windows Terminal.
 
 .LINK
-
-https://github.com/imfanchen/Pwsh-AI
+    https://github.com/imfanchen/Pwsh-AI
 
 .EXAMPLE
-
-Use-PwshAI "I want to get the IP address of the network adapter."
+    Use-PwshAI "I want to get the IP address of the network adapter."
 
 .EXAMPLE 
-
-USe-PwshAI "I want to get all the python file paths on my c drive" -SuggestionCount 5
-
+    Use-PwshAI "I want to get all the python file paths on my c drive" -SuggestionCount 5
 #>
 function Use-PwshAI {
     [CmdletBinding()]

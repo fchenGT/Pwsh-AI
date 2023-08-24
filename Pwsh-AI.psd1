@@ -62,7 +62,7 @@
     # NestedModules = @()
 
     # Functions to export from this module
-    FunctionsToExport = @('Get-MenuSeparator', 'Show-Menu', 'Use-PwshAI')
+    FunctionsToExport = @('Show-Menu', 'Show-PSAI', 'Use-PwshAI')
 
     # Cmdlets to export from this module
     # CmdletsToExport = '*'
@@ -88,7 +88,7 @@
         PSData = @{
 
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags       = @("Menu", "Console", "Interactive", 'AI', 'OpenAI', 'PswhAI', 'PowerShell')
+            Tags       = @("Menu", "Console", "Interactive", 'AI', 'OpenAI', 'PsAI' , 'PswhAI', 'PowerShellAI')
 
             # A URL to the license for this module.
             # LicenseUri = ''
