@@ -5,7 +5,7 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'Pwsh-AI.psm1'
+    RootModule        = 'PwshAI.psm1'
 
     # Version number of this module.
     ModuleVersion     = '1.0.0'
@@ -94,7 +94,7 @@
             # LicenseUri = ''
 
             # A URL to the main website for this project.
-            ProjectUri = 'https://github.com/imfanchen/Pwsh-AI'
+            ProjectUri = 'https://github.com/imfanchen/PwshAI'
 
             # A URL to an icon representing this module.
             # IconUri = ''
