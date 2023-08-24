@@ -27,7 +27,7 @@
     Use-PwshAI "I want to get the IP address of the network adapter."
 
 .EXAMPLE 
-    Use-PwshAI "I want to get all the python file paths on my c drive" -SuggestionCount 5
+    Use-PwshAI "I want to get all the image file paths on my C drive" -SuggestionCount 5
 #>
 function Use-PwshAI {
     [CmdletBinding()]

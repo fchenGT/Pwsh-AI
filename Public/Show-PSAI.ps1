@@ -20,7 +20,7 @@
     Use-PsAI I want to get the IP address of the network adapter.
 
 .EXAMPLE 
-    Use-PsAI I want to get all the python file paths on my c drive.
+    Use-PsAI I want to get all the image file paths on my C drive.
 #>
 
 function Show-PSAI {
