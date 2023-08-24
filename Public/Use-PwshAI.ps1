@@ -96,7 +96,8 @@ function Use-PwshAI {
         Invoke-Expression $command
     }
     else {
-        $user = ([adsi]"LDAP://$(whoami /fqdn)").displayName
-        Write-Host "Fan: Hi $user, hope you find what you are looking for."
+        $fullName = ([adsi]"LDAP://$(whoami /fqdn)").displayName
+        $firstName, $lastName = $fullName -split " "
+        Write-Host "Fan: Hi $firstName, hope you find what you are looking for."
     }
 }
